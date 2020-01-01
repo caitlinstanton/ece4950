@@ -111,4 +111,11 @@ void printValues() {
     Serial.println(" %");
 
     Serial.println();
+    float alt = bme.readAltitude(SEALEVELPRESSURE_HPA);
+    Serial.println(alt);
+    int integer = (int)(alt);
+    int dec = 10000 * (alt - integer);
+    Serial.println(integer);
+    Serial.println(dec);
+   
 }

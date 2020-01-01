@@ -203,7 +203,7 @@ bool cMyLoRaWAN::GetSavedSessionInfo(
     size_t nExtraSessionInfo,
     size_t *pnExtraSessionActual
     ){
-//Your implementation goes here
+  //Your implementation goes here
   if (!pSessionInfo) {
     return false;
   } else {
@@ -219,6 +219,7 @@ bool cMyLoRaWAN::GetSavedSessionInfo(
 bool cMyLoRaWAN::GetAbpProvisioningInfo(
     AbpProvisioningInfo *pProvisioningInfo
  ){
+
   if (!pProvisioningInfo) {
     return false;
   } else {
